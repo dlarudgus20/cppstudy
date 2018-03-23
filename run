@@ -1,0 +1,15 @@
+#!/bin/bash
+
+echo "[Compiling...]"
+clang++-6.0 $1.cpp -std=c++2a -Wall -Wextra -pedantic
+
+if [ $? -eq 0 ]; then
+    echo "[Running...]"
+    ./a.out
+
+    echo "[Cleaning...]"
+    rm a.out
+else
+    :
+fi
+
