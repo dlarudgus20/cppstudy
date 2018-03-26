@@ -6,6 +6,10 @@ auto main() -> int
 {
     using namespace std::literals;
 
+    auto x = 10;
+    auto y = 20;
+    std::cout << x << " + " << y << " = " << (x + y) << "\n";
+
     auto i = int { };
     auto d = double { };
     auto s = std::string { };
