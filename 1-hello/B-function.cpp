@@ -1,8 +1,9 @@
 #include <iostream>
 #include <string>
 
-void foo()
+void foo(int& x)
 {
+    x = 42;
     std::cout << "foo()\n";
 }
 
@@ -26,7 +27,10 @@ auto qux(int, double)
 
 int main()
 {
-    foo();
+    int x = 123;
+    foo(x);
+    std::cout << "foo(): x=" << x << "\n";
+
     std::cout << bar(42) << "\n";
     std::cout << baz("qt", 64) << "\n";
     std::cout << qux(2327, 2.17) << "\n";

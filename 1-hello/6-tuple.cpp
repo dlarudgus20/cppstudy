@@ -16,13 +16,13 @@ int main()
         std::cout << n << " " << s << "\n";
     }
 
-    auto ar = std::vector {
+    auto vt = std::vector {
         std::tuple { 0.0, "F" },
         std::tuple { 2.0, "재수강" },
         std::tuple { 3.0, "다신 만나지 말자" },
         std::tuple { 4.5, "???" }
     };
-    for (auto [ n, s ] : ar)
+    for (auto [ n, s ] : vt)
     {
         std::cout << n << ":" << s << "\n";
     }

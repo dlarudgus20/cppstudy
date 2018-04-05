@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <vector>
 
 int main()
 {
@@ -16,5 +17,13 @@ int main()
     std::cout << s << " " << rs << "\n";
     s[2] = 't';
     std::cout << s << " " << rs << "\n";
+
+    auto vt = std::vector { 1, 2, 3 };
+    for (auto& x : vt)
+        x *= 2;
+
+    for (auto x : vt)
+        std::cout << x << " ";
+    std::cout << "\n";
 }
 

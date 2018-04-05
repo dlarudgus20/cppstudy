@@ -5,7 +5,7 @@
 int main()
 {
     auto vt = std::vector { 4, 1, 2, 7, 3 };
-    std::cout << vt[0] << ar[1] << ar[2] << "\n";
+    std::cout << vt[0] << vt[1] << vt[2] << "\n";
 
     for (auto i : vt)
     {
